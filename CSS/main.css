@@ -1,3 +1,10 @@
-#nav{
-    background-color: orange;
+body{
+    width: 900px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#F4871E;
 }
