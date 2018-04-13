@@ -1,23 +1,52 @@
 <html>
     <head>
-        <title>High Noon Restaurant & Saloon</title>
+        <title>High Noon Restaurant &amp; Saloon</title>
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
     </head>
     <body>
         <div class="header">
-            <p>
-                <h2>Join the Posse</h2>
-                Keep in the know about what's happening at High Noon 
-                and even get first crack at some exclusive specials. 
-                Simply sign up here for our newsletter and we'll deliver 
-                the goods right to your inbox.
-            </p>
+            <div class="container">
+                <div id="newsletter">
+                    <h2>Join the Posse</h2>
+                    <p>
+                        Keep in the know about what's happening at High Noon and even 
+                        get first crack at some exclusive specials. Simply sign up here for 
+                        our newsletter and we'll deliver the goods right to your inbox.
+                    </p>
+                    <input type="email" placeholder="Email">
+                    <button>Subscribe</button>
+                </div>
+                <div id="logo">
+                    <img src="images/high_noon.png">
+                </div>
+            </div>
         </div>
         <ul>
-            <li><a href="index.hmtl">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="menus.html">Menus</a></li>
-            <li><a href="catering.html">Groups & Catering</a></li>
+            <li><a href="catering.html">Groups &amp; Catering</a></li>
             <li><a href="history.html">History</a></li>
+            <li><a href="contact.html">Location/Contact</a></li>
         </ul>
+        <div class="feature">
+            <div class="featureText">
+                <h1>The Original Old Town Steak House</h1>
+                <p>
+                    “We opened our doors in 1974, my dad had one thing in mind: 
+                    to serve great steaks and drinks to his friends and family. For 
+                    41 years we have stayed true to his vision. We have added 
+                    some things along the way: wild game, homemade New 
+                    Mexican food and a great selection of tequila , however one 
+                    thing hasn’t changed- the steaks are still fantastic!”
+
+                    Carla Villa
+                    Owner and Daughter of Charley and Shirley Villa, Founders
+                </p>
+                <p id="signature">
+                    Carla Villa<br/>
+                    Owner and Daughter of Charley and Shirley Villa, Founders
+                </p>
+            </div>
+        </div>
     </body>
 </html>
