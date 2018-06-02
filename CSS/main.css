@@ -4,7 +4,17 @@ body{
     min-width: 900px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    padding: 0.5em 0;
+    color: #F58320;
+}
+
 .header{
+    background: linear-gradient(lightgray, white);
+}
+
+.body{
     background: linear-gradient(lightgray, white);
 }
 
@@ -17,7 +27,7 @@ body{
     margin-right: auto;
 }
 
-#newsletter{
+.container div{
     float: left;
     height: 117px;
     width: 380px;
@@ -25,23 +35,21 @@ body{
     background-color: white;
 }
 
-#newsletter h2{
+.container h2{
     font-size: 20px;
     border-bottom: 1px solid #444;
     margin-bottom: 0.5em;
-    color: darkorange;
     padding: 0;
     margin-top: 0;
-    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
 }
 
-#newsletter p{
+.container p{
     margin: 0;
     padding-bottom: 0.5em;
-    font-size: 14px;;
+    font-size: 14px;
 }
 
-#newsletter input{
+.container input{
     background-color: darkgray;
     border-style: none;
     margin: 0;
@@ -53,7 +61,7 @@ body{
     width: 189px;
 }
 
-#newsletter button {
+.container button{
     background-color: #444444;
     color: white;
     border-style: none;
@@ -61,7 +69,7 @@ body{
     width: 78px;
 }
 
-#logo{
+.container img{
     float: right;
 }
 
@@ -71,7 +79,7 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
-    background-color: darkorange;
+    background-color: #F58320;
     text-align: center;
 }
 
@@ -91,10 +99,59 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background: linear-gradient(lightgray, white);
+    color: darkslategray;
 }
 
 .active {
     background: linear-gradient(lightgray, white);
     color: darkslategray;
+}
+
+.feature{
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+.feature div{
+    float: left;
+    width: 357px;
+    height: 277px;
+    margin: 0;
+}
+
+.feature h1{
+    font-size: 40px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.feature p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#signature{
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.feature button{
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #444444;
+    color: white;
+    border-style: none;
+    height: 26px;
+    width: 110px;
+}
+
+.feature img{
+    border: 1px solid #444; 
+    width: 531px;
+    height: 275px;
+    float: right;
 }
