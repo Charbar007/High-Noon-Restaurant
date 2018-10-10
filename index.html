@@ -3,53 +3,295 @@
     <head>
         <title>High Noon Restaurant &amp; Saloon</title>
         <style>
-            
+            body{
+                margin: 0px;
+                min-width: 900px;
+                font-family: Palatino, Times, "Times New Roman", serif;
+            }
+
+            h1, h2{
+                font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+                color: #F58320;
+            }
+           
+            .wrapper{
+                height: 180px;
+                background-image: linear-gradient(#d2d3d5, white);
+            }
+
+            .header{
+                height: 180px;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            #newsletter{
+                height: 117px;
+                width: 380px;
+                margin-top: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                float: left;
+                background-color: white;
+            }
+
+            #newsletter h2{
+                font-size: 20px;
+                border-bottom: 1px solid #444;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            #newsletter p{
+                margin: 0px;
+                font-size: 14px;
+                padding-bottom: 7px;
+            }
+
+            #newsletter input{
+                height: 15px;
+                width: 169px;
+                border: none;
+                font-size: 13px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: #999;
+                color: white;
+            }
+
+            #newsletter #button{
+                height: 25px;
+                width: 78px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: none;
+                background-color: #444;
+
+            }
+
+            .header img{
+                float: right;
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+                background-color:#F4871E;
+                overflow: hidden;
+            }
+
+            li {
+                display: inline;
+            }
+
+            li a {
+                color: white;
+                padding-top: 7px;
+                padding-bottom: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+            }
+
+            li a:hover:not(.active) {
+                background-image: linear-gradient(#d2d3d5, #f8f9f9);
+                text-decoration: underline;
+                color: #444444;
+            }
+
+            .active {
+                background-image: linear-gradient(#d2d3d5, #f8f9f9);
+                text-decoration: underline;
+                color: #444444;
+            }
+
+            #feature{
+                height: 358px;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+
+            .feature_item{
+                height: 285px;
+            }
+
+            .feature_item img{
+                float: right;
+                height: 275px;
+                width: 531px;
+                margin-left: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #424242;
+            }
+
+            .feature_item h1{
+                font-size: 40px;
+                padding-bottom: 20px;
+                margin: 0px;
+            }
+
+            .feature_item p{
+                font-size: 14px;
+                padding-bottom: 7px;
+                margin: 0px;
+            }
+
+            #signature{
+                font-style: italic;
+            }
+
+            .button{
+                font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                background: #444;
+                color: #fff;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .button:hover{
+                text-decoration: underline;
+            }
+
+            #contentWrapper{
+                height: 645px;
+                margin-top: 10px;
+                background-color: #F58320;
+            }
+
+            #content{
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .col{
+                width: 280px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-image: url("images/col_fade.png");
+                background-repeat: no-repeat;
+            }
+
+            .col h2{
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                margin-top: 0px;
+                border-bottom-style: solid;
+                border-bottom-color: #444;
+                border-bottom-width: 1px;
+                color:#444;
+            }
+
         </style>
     </head>
     <body>
-        <div class="header">
-            <div class="container">
-                <div>
+        <div class="wrapper">
+            <div class="header">
+                <div id="newsletter">
                     <h2>Join the Posse</h2>
                     <p>
-                        Keep in the know about what's happening at High Noon and even 
-                        get first crack at some exclusive specials. Simply sign up here for 
-                        our newsletter and we'll deliver the goods right to your inbox.
+                        Keep in the know about what's happening at High Noon and even get first 
+                        crack at some exclusive specials. Simply sign up here for our newsletter 
+                        and we'll deliver the goods right to your inbox.
                     </p>
-                    <input type="email" placeholder="Email">
-                    <button>Subscribe</button>
+                    <input type="email" placeholder="Email" />
+                    <input type="submit" id="button" value="Subscribe" />
                 </div>
-                <img src="images/high_noon.png">
+                <img src="images/high_noon.png" />
             </div>
         </div>
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="menus.html">Menus</a></li>
-            <li><a href="catering.html">Groups &amp; Catering</a></li>
+            <li><a href="catering.html">Groups & Catering</a></li>
             <li><a href="history.html">History</a></li>
             <li><a href="contact.html">Location/Contact</a></li>
         </ul>
-        <div class="body">
-            <div class="feature">
-                <div>
-                    <h1>The Original Old Town Steak House</h1>
-                    <p>
-                        “When we opened our doors in 1974, my dad had one thing in mind: 
-                        to serve great steaks and drinks to his friends and family. For 
-                        44 years we have stayed true to his vision. We have added 
-                        some things along the way: wild game, homemade New 
-                        Mexican food and a great selection of tequila, however one 
-                        thing hasn’t changed- the steaks are still fantastic!”
-                    </p>
-                    <p id="signature">
-                        Carla Villa<br/>
-                        Owner and Daughter of Charley and Shirley Villa, Founders
-                    </p>
-                    <button>See Our Menus</button>
-                </div>
-                <img src="images/feature_steak.jpg">
+
+        <div id="feature">
+            <div class="feature_item">
+                <img src="images/feature_steak.jpg" />
+                <h1>The Original Old Town Steak House</h1>
+                <p>
+                    “We opened our doors in 1974, my dad had one thing in mind: 
+                    to serve great steaks and drinks to his friends and family. 
+                    For 41 years we have stayed true to his vision. We have added 
+                    some things along the way: wild game, homemade New Mexican 
+                    food and a great selection of tequila, however one thing hasn’t 
+                    changed- the steaks are still fantastic!”
+                </p>
+                <p id="signature">
+                    Carla Villa
+                    <br/>
+                    Owner and Daughter of Charley and Shirley Villa, Founders
+                </p>
+                <a href="menus.html" class="button">See our Menus</a>
             </div>
         </div>
         <!--<script type="text/javascript" src="https://secure.opentable.com/frontdoor/default.aspx?rid=152329&restref=152329&bgcolor=f58320&titlecolor=0F0F0F&subtitlecolor=0F0F0F&btnbgimage=https://secure.opentable.com/frontdoor/img/ot_btn_white.png&otlink=000000&icon=dark&mode=wide&hover=1"></script><a href="http://www.opentable.com/single.aspx?rid=152329&rtype=ism&restref=152329" class="OT_ExtLink">High Noon (152329), New Mexico Reservations</a>-->
+        <div id="contentWrapper">
+            <div id="content">
+                <div class="col">
+                    <h2>A little Old, a Little New</h2>
+                    <p>
+                        When High Noon opened its doors in July of 1974, 
+                        we added to the building's colorful history. 
+                        Originally constructed as a home sometime between 
+                        1750 and 1785, legend has it that the structure has 
+                        been both a gambling parlor and a brothel. With the 
+                        addition of two rooms in the late 1960's, it became 
+                        home to a Spanish furniture maker as well as his 
+                        retail storefront. The original building remained an 
+                        apartment until High Noon took over--its last tenant 
+                        being a Catholic nun.
+                    </p>
+                    <p>
+                        Like a good ghost story?
+                    </p>
+                    <p>
+                        Reminders of the buildings’ past lives are present 
+                        in the spirits who still make it their home. 
+                        Customers and employees alike have many stories about 
+                        their supernatural encounters--look for the lady in 
+                        the white dress who haunts the Santos Room. If you dare.
+                    </p>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
